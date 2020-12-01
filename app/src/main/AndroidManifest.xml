@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Catedra3Android">
-        <activity android:name=".Main_act">
+        <activity android:name=".Menu_act"></activity>
+        <activity android:name=".Promociones_act" />
+        <activity android:name=".ListadoClientes_act" />
+        <activity android:name=".Firebase_act" />
+        <activity android:name=".Login_act">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
