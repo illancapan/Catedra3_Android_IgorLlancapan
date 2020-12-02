@@ -30,8 +30,8 @@ public class Login_act extends AppCompatActivity {
          pass = passwordId.getText().toString();
 
         if (user.equalsIgnoreCase("android") && pass.equalsIgnoreCase("123") ){
-            Intent i = new Intent(this, Menu_act.class);
-            startActivity(i);
+            Intent iniciar = new Intent(this, Menu_act.class);
+            startActivity(iniciar);
         }
         else {
             Toast.makeText(this, "Ha Ocurrido un Error\nIngrese los Datos Nuevamente", Toast.LENGTH_LONG).show();

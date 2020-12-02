@@ -5,150 +5,104 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#e30513"
+    app:layout_gravity="center"
     tools:context=".Promociones_act">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="341dp"
-        android:layout_height="387dp"
-        android:layout_marginBottom="68dp"
+        android:id="@+id/cardView4"
+        android:layout_width="337dp"
+        android:layout_height="385dp"
         app:cardBackgroundColor="#042a5e"
-        app:layout_constraintBottom_toTopOf="@+id/cardView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent">
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="56dp">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="337dp"
-            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="306dp"
+            android:layout_height="155dp"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="314dp"
-                android:layout_height="342dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.304"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="4dp">
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="54dp" />
 
-                <LinearLayout
-                    android:layout_width="292dp"
-                    android:layout_height="308dp"
-                    android:orientation="vertical"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.509">
+            <EditText
+                android:id="@+id/editTextTextPersonName4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
 
-                    <Spinner
-                        android:id="@+id/spinner"
-                        android:layout_width="match_parent"
-                        android:layout_height="76dp"
-                        android:background="#ffffff" />
+            <EditText
+                android:id="@+id/editTextTextPersonName5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
 
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="17dp" />
-
-                    <EditText
-                        android:id="@+id/editTextTextPersonName5"
-                        android:layout_width="match_parent"
-                        android:layout_height="43dp"
-                        android:background="#ffffff"
-                        android:ems="10"
-                        android:hint="Ingrese promocion"
-                        android:inputType="textPersonName" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="14dp" />
-
-                    <EditText
-                        android:id="@+id/editTextTextPersonName6"
-                        android:layout_width="match_parent"
-                        android:layout_height="45dp"
-                        android:background="#ffffff"
-                        android:ems="10"
-                        android:hint="Ingrese valor envio"
-                        android:inputType="textPersonName" />
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <LinearLayout
-                            android:id="@+id/linearLayout3"
-                            android:layout_width="291dp"
-                            android:layout_height="97dp"
-                            android:orientation="horizontal"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="1.0">
-
-                        </LinearLayout>
-
-                        <Button
-                            android:id="@+id/button3"
-                            android:layout_width="276dp"
-                            android:layout_height="71dp"
-                            android:background="#042a5e"
-                            android:text="Calcular promocion"
-                            android:textSize="18sp"
-                            android:textStyle="bold"
-                            app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
-                            app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="@+id/linearLayout3" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </LinearLayout>
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView3"
-        android:layout_width="338dp"
-        android:layout_height="165dp"
-        app:cardBackgroundColor="#042a5e"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="499dp">
+        </LinearLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <LinearLayout
-                android:layout_width="282dp"
-                android:layout_height="86dp"
-                android:orientation="vertical"
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Calcular promocion"
+                android:textStyle="bold"
+                app:backgroundTint="#e30513"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="38dp"
-                    android:background="#ffffff"
-                    android:text="TextView" />
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="38dp"
-                    android:background="#ffffff"
-                    android:text="TextView"
-                    android:textSize="18sp" />
-            </LinearLayout>
+                app:layout_constraintStart_toStartOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="333dp"
+        android:layout_height="131dp"
+        android:foregroundGravity="center"
+        app:cardBackgroundColor="#042a5e"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="483dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="265dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:background="#FFFFFF"
+                android:text="TextView" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="191dp"
+                    android:layout_height="47dp"
+                    android:background="#FFFFFF"
+                    android:text="TextView" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

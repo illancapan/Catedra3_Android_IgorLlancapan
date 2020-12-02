@@ -4,118 +4,114 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     android:background="#e30513"
+    app:layout_gravity="center"
     tools:context=".Firebase_act">
 
     <androidx.cardview.widget.CardView
         android:layout_width="353dp"
         android:layout_height="666dp"
         android:background="#042a5e"
+        android:foregroundGravity="center"
         app:cardBackgroundColor="#042A5E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="237dp"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="171dp"
-                android:layout_height="112dp"
-                android:layout_marginTop="68dp"
-                app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
+                android:layout_width="147dp"
+                android:layout_height="119dp"
+                android:layout_gravity="center_horizontal"
+                android:foregroundGravity="center"
                 app:srcCompat="@drawable/firebase" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintLayout"
-                android:layout_width="310dp"
-                android:layout_height="223dp"
-                android:layout_marginBottom="44dp"
-                app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.511"
-                app:layout_constraintStart_toStartOf="parent">
+        </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="242dp"
-                    android:layout_height="146dp"
-                    android:background="#FFFFFF"
-                    android:orientation="vertical"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="188dp"
+            android:layout_gravity="center"
+            android:background="#042a5e"
+            app:cardBackgroundColor="#042a5e">
 
-                    <EditText
-                        android:id="@+id/editTextTextPersonName2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:hint="Ingrese nombre"
-                        android:inputType="textPersonName" />
-
-                    <EditText
-                        android:id="@+id/editTextTextPersonName3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:hint="Ingrese destino"
-                        android:inputType="textPersonName" />
-
-                    <EditText
-                        android:id="@+id/editTextTextPersonName4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:hint="Ingrese promocion"
-                        android:inputType="textPersonName" />
-
-                </LinearLayout>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintLayout2"
+            <LinearLayout
                 android:layout_width="304dp"
-                android:layout_height="155dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="491dp">
+                android:layout_height="136dp"
+                android:layout_gravity="center"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="266dp"
-                    android:layout_height="122dp"
-                    android:orientation="vertical"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                <EditText
+                    android:id="@+id/editTextTextPersonName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:hint="Ingrese nombre"
+                    android:inputType="textPersonName"
+                    android:textSize="18sp" />
 
-                    <Button
-                        android:id="@+id/button4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Guardar Clientes" />
+                <EditText
+                    android:id="@+id/editTextTextPersonName2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:hint="Ingrese destino"
+                    android:inputType="textPersonName" />
 
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="15dp" />
+                <EditText
+                    android:id="@+id/editTextTextPersonName3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:hint="Ingrese promocion"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-                    <Button
-                        android:id="@+id/button5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Listado Clientes" />
-                </LinearLayout>
-            </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="239dp"
+            android:layout_gravity="bottom|center_horizontal"
+            app:cardBackgroundColor="#042a5e">
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content"
+                    android:text="Guardar clientes"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#e30513" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content"
+                    android:text="Listado clientes"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#e30513" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
     </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
