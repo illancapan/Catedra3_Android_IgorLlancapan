@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "179055278847",
+    "firebase_url": "https://catedratres-e35aa.firebaseio.com",
+    "project_id": "catedratres-e35aa",
+    "storage_bucket": "catedratres-e35aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179055278847:android:86b44201bf6810e2f96aca",
+        "android_client_info": {
+          "package_name": "com.example.catedra3android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179055278847-49qnhga54fe76o83ops6vli5oh753gtd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrqum0Vd5xuSzbArMVGxNxpF6xSOGDA7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179055278847-49qnhga54fe76o83ops6vli5oh753gtd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
